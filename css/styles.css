@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,200;1,400;1,500;1,900&display=swap');
 
 *,
 *::before,
@@ -129,9 +129,23 @@ main {
 .form-controls input {
   width: auto;
   border: 2px solid #363636;
+  background-color: #fff;
   border-radius: 4px;
   padding: 4px;
   height: 55px;
+}
+
+.form-controls input::placeholder {
+  font-weight: 200;
+  font-style: italic;
+}
+
+.form-controls input:user-valid {
+  border-color: #90ee90;
+}
+
+.form-controls input:user-invalid {
+  border-color: #ffb6c1;
 }
 
 .submit {
