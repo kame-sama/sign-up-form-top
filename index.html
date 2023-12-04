@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign Up Form</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <div class="hero">
@@ -16,38 +17,52 @@
   </div>
   <main class="main">
     <div class="description">
-      <p>
-        This online service is a fake one! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, iusto accusamus, omnis exercitationem minima iure velit delectus ipsam cum fugiat ut nisi! Facere eum maxime porro esse, nobis repudiandae recusandae?
-      </p>
-      <p>
-        You <em>know</em> you want to.
-      </p>
+      <div class="container">
+        <p>
+          This online service is a fake one! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, iusto accusamus, omnis exercitationem minima iure velit delectus ipsam cum fugiat ut nisi! Facere eum maxime porro esse, nobis repudiandae recusandae?
+        </p>
+        <p>
+          Sign up <em>now</em> to get started.
+        </p>
+      </div>
     </div>
 
     <form class="sign-up-form">
       <h2>Let's do this!</h2>
       <div class="form-row">
-        <label for="first-name">First name</label>
-        <input type="text" id="first-name" name="first-name">
+        <div class="form-controls">
+          <label for="first-name">First name</label>
+          <input type="text" id="first-name" name="first-name">
+        </div>
 
-        <label for="last-name">Last name</label>
-        <input type="text" id="last-name" name="last-name">
+        <div class="form-controls">
+          <label for="last-name">Last name</label>
+          <input type="text" id="last-name" name="last-name">
+        </div>
       </div>
 
       <div class="form-row">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email">
+        <div class="form-controls">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+        </div>
 
-        <label for="phone">Phone number</label>
-        <input type="tel" id="phone" name="phone">
+        <div class="form-controls">
+          <label for="phone">Phone number</label>
+          <input type="tel" id="phone" name="phone">
+        </div>
       </div>
 
       <div class="form-row">
-        <label for="pwd">Password</label>
-        <input type="password" id="pwd" name="password">
+        <div class="form-controls">
+          <label for="pwd">Password</label>
+          <input type="password" id="pwd" name="password">
+        </div>
 
-        <label for="confirm-pwd">Confirm password</label>
-        <input type="password" id="confirm-pwd" name="">
+        <div class="form-controls">
+          <label for="confirm-pwd">Confirm password</label>
+          <input type="password" id="confirm-pwd" name="">
+        </div>
       </div>
 
       <div class="submit">
