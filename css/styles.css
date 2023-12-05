@@ -148,6 +148,16 @@ main {
   border-color: #ffb6c1;
 }
 
+label[for="pwd"]::after {
+  content: attr(data-after);
+  color: red;
+  display: block;
+  width: 200px;
+  position: absolute;
+  left: 0;
+  top: 55px;
+}
+
 .submit {
   margin-top: 2rem;
 }
