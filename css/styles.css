@@ -141,16 +141,37 @@ main {
 }
 
 .form-controls input:user-valid {
-  border-color: #90ee90;
+  border-color: #008a29;
+  background-color: #abffc4;
+}
+
+.form-controls input:user-valid + label {
+  color: #008a29;
 }
 
 .form-controls input:user-invalid {
-  border-color: #ffb6c1;
+  border-color: #a60505;
+  background-color: #ff9999;
+}
+
+.form-controls input:user-invalid + label {
+  color: #a60505;
+}
+
+.form-controls input:hover,
+.form-controls input:focus {
+  border-color: #2f44fe;
+  background-color: #b0cdff;
+}
+
+.form-controls input:hover + label,
+.form-controls input:focus + label {
+  color: #363636;
 }
 
 label[for="pwd"]::after {
   content: attr(data-after);
-  color: red;
+  color: #a60505;
   display: block;
   width: 200px;
   position: absolute;

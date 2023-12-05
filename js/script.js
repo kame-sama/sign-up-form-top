@@ -8,7 +8,7 @@ confirmPwd.addEventListener('input', matchPasswords);
 
 function matchPasswords() {
   if (pwd.value !== confirmPwd.value) {
-    label.setAttribute('data-after', '* password do not match');
+    label.setAttribute('data-after', '* passwords do not match');
     submit.addEventListener('click', preventDefault);
   } else {
     label.setAttribute('data-after', '');
